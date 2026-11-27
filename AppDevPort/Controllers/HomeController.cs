@@ -11,6 +11,16 @@ namespace AppDevPort.Controllers
             return View();
         }
 
+        public IActionResult Farhana()
+        {
+            return View();
+        }
+
+        public IActionResult Partible()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
