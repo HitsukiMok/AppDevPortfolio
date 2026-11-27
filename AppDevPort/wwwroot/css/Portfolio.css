@@ -1,0 +1,637 @@
+﻿
+/* ==========================
+   GENERAL STYLING
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3EDE3;
+    color: #171717;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+    background-color: #F3EDE3;
+    padding: 40px 5%;
+}
+
+
+/* TOP HEADER */
+
+.top-header {
+    background-color: #071426;
+    color: #F3EDE3;
+    width: 100vw;
+    height: 64px;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #B99D6A;
+    border-bottom: 1px solid #B99D6A;
+    margin: 0;
+}
+
+.top-header p {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: #F3EDE3;
+    }
+
+        .top-header p:last-child {
+            color: #B99D6A;
+            letter-spacing: 2px;
+        }
+
+
+.main-title {
+    font-family: Georgia, serif;
+    font-size: 100px;
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: -4px;
+    margin: 25px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    width: 40%;
+}
+
+.gold-text {
+    color: #B99D6A;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.gold-line {
+    width: 45px;
+    height: 3px;
+    background-color: #B99D6A;
+    margin: 25px 0;
+}
+
+.description {
+    max-width: 350px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.profile-image {
+    width: 55%;
+    text-align: center;
+}
+
+    .profile-image img {
+        width: 100%;
+        max-width: 450px;
+        height: 430px;
+        object-fit: cover;
+        border: 3px solid #071426;
+        border-radius:20px;
+    }
+
+
+/* ==========================
+   SELECTED WORKS
+========================== */
+
+.projects {
+    background-color: #071426;
+    color: #F3EDE3;
+    padding: 45px 5%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #B99D6A;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+    .section-heading h2 {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .section-heading p {
+        color: #B99D6A;
+        font-size: 12px;
+    }
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-card {
+    width: 25%;
+    text-align: center;
+}
+
+    .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 1px solid #B99D6A;
+    }
+
+    .project-card h3 {
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin-top: 15px;
+    }
+
+.project-category {
+    font-size: 10px;
+    color: #B99D6A;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+.project-description {
+    font-size: 11px;
+    color: #D5D0C8;
+    line-height: 1.6;
+    margin-top: 12px;
+    text-align: center;
+}
+
+
+/* ==========================
+   SERVICES AND TECH STACK
+========================== */
+
+.services {
+    background-color: #F3EDE3;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 55px 5%;
+}
+
+.service-list,
+.tech-stack {
+    width: 50%;
+}
+
+.services h2 {
+    color: #B99D6A;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.service-item,
+.tech-item {
+    margin-bottom: 25px;
+}
+
+    .service-item h3,
+    .tech-item h3 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+
+    .service-item p,
+    .tech-item p {
+        color: #666666;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+/* ==========================
+   CERTIFICATIONS
+========================== */
+
+.certifications {
+    background-color: #071426;
+    color: #F3EDE3;
+    padding: 45px 5%;
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.certificate-card {
+    width: 25%;
+    text-align: center;
+}
+
+    .certificate-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border: 1px solid #B99D6A;
+    }
+
+    .certificate-card h3 {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        line-height: 1.5;
+    }
+
+.certificate-issuer {
+    color: #B99D6A;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.certificate-description {
+    color: #D5D0C8;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer {
+    background-color: #071426;
+    color: #F3EDE3;
+    padding: 45px 5%;
+    border-top: 1px solid #B99D6A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-title h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.footer-title span {
+    color: #B99D6A;
+    font-size: 25px;
+}
+
+.footer h3 {
+    color: #B99D6A;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: #B99D6A;
+}
+
+.footer-logo {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    color: #B99D6A;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 50px;
+        letter-spacing: -2px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .intro,
+    .profile-image {
+        width: 100%;
+    }
+
+    .intro {
+        margin-bottom: 30px;
+    }
+
+    .profile-image img {
+        height: 350px;
+    }
+
+    .project-container,
+    .certificate-container {
+        flex-wrap: wrap;
+    }
+
+    .project-card,
+    .certificate-card {
+        width: 47%;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-list,
+    .tech-stack {
+        width: 100%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+        .footer > div {
+            width: 45%;
+        }
+}
+
+@media (max-width: 480px) {
+
+    .main-title {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .top-header {
+        font-size: 9px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .project-card,
+    .certificate-card {
+        width: 100%;
+    }
+
+    .footer > div {
+        width: 100%;
+    }
+}
+
+
+/* ==========================
+   FULL WIDTH NAVY SECTIONS
+========================== */
+
+.projects,
+.certifications,
+.footer {
+    width: 100vw;
+    max-width: none;
+
+    position: relative;
+    left: 50%;
+
+    margin-left: -50vw;
+    margin-right: 0;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* ==========================
+   CERTIFICATION LAYOUT
+========================== */
+
+.certifications {
+    padding: 50px 5%;
+}
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.certificate-card {
+    width: 100%;
+    text-align: center;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.certificate-card h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+/* ==========================
+   FOOTER LAYOUT
+========================== */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr auto;
+    align-items: center;
+    gap: 35px;
+    padding: 50px 5%;
+}
+
+.footer-title,
+.contact,
+.socials {
+    min-width: 0;
+}
+
+.footer-logo {
+    text-align: right;
+}
+
+/* ==========================
+   RESPONSIVE LAYOUT
+========================== */
+
+@media (max-width: 900px) {
+
+    .certificate-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .certificate-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
+
+}
+
+
+/* ==========================
+   FOOTER FINAL FIX
+========================== */
+
+/* Hide the default ASP.NET footer */
+.border-top.footer.text-muted {
+    display: none !important;
+}
+
+/* Custom portfolio footer */
+.portfolio-footer {
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 40px 6%;
+    background-color: #071426;
+    color: #F3EDE3;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 0.4fr;
+    align-items: center;
+    gap: 35px;
+    border-top: 1px solid #B99D6A;
+}
+
+/* Remove unnecessary bottom spacing */
+main {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+body {
+    margin-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .portfolio-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .portfolio-footer {
+        grid-template-columns: 1fr;
+        padding: 35px 7%;
+    }
+}
+
+
+/* FOOTER TYPOGRAPHY */
+
+.footer-label {
+    display: block;
+    color: #B99D6A;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.contact h3,
+.socials h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #F3EDE3;
+    margin-bottom: 25px;
+}
+
+.footer-detail {
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #D5D0C7;
+}
+
+    .footer-detail span {
+        color: #B99D6A;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-right: 8px;
+    }
+
+    .footer-detail a {
+        color: #F3EDE3;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .footer-detail a:hover {
+            color: #B99D6A;
+        }
+
+.footer-location {
+    color: #A9A9A9;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
