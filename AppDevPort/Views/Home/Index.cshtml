@@ -1,8 +1,378 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
+    ViewData["Title"] = "Farhana Lardizabal | Portfolio";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- Free stand-ins for the design's fonts:
+         Archivo Expanded Black ≈ ObviouslyVariable, Inter ≈ Degular, JetBrains Mono ≈ Bergen Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@@125,800;125,900&family=Inter:wght@@400;700&family=JetBrains+Mono:wght@@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/css/portfolio.css" asp-append-version="true" />
+</head>
+<body>
+
+    <!-- ===== Nav: centered wordmark ===== -->
+    <header class="nav">
+        <a href="#home" class="wordmark">FAR</a>
+        <nav class="nav-links">
+            <a href="#about">about</a>
+            <a href="#experience">experience</a>
+            <a href="#projects">projects</a>
+            <a href="#awards">awards</a>
+            <a href="#impact">impact</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <!--  Hero  -->
+    <section id="home" class="hero">
+        <h1 class="display">
+            <span class="hv">HI,</span>
+            <span class="bt">I'M</span><br />
+            <span class="hv">FAR.</span>
+        </h1>
+
+        <!-- Portrait -->
+        <div class="portrait-wrap">
+            <img class="portrait" src="~/img/portrait.webp" alt="profile ko" />
+
+    
+            <img class="doodle doodle--corner" src="~/img/chibi-1.webp" alt="uika wave" />
+
+        </div>
+
+        <p class="hero-sub">smth smth about me.</p>
+
+        <dl class="hero-info">
+            <div><dt class="tag">full name</dt><dd>Farhana Hazel R. Lardizabal</dd></div>
+            <div><dt class="tag">program</dt><dd>BS Computer Science</dd></div>
+            <div><dt class="tag">school / year</dt><dd>Polytechnic University of the Philippines, Manila · 2nd Year</dd></div>
+        </dl>
+
+        <div class="actions">
+            <a href="https://drive.google.com/file/d/1T1YMNI1s_ou3kVMJBMUIvsYh3F3wb2HZ/view?usp=sharing" target="_blank" class="btn btn-pill">RESUME</a>
+            <a href="https://github.com/HitsukiMok" target="_blank" class="btn btn-outline">GITHUB</a>
+            <a href="https://linkedin.com/in/farhanalardi" target="_blank" class="btn btn-outline">LINKEDIN</a>
+        </div>
+        <a href="#about" class="text-link">or just scroll, no pressure ↓</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2 class="heading"><span class="hv">ABOUT</span> <span class="bt">ME</span></h2>
+
+        <img class="doodle doodle--about" src="~/img/chibi-2.webp" alt="anon hi" />
+
+        <div class="about-grid">
+            <div class="card card--bone">
+                <span class="tag">// focus</span>
+                <p class="focus">Aspiring Machine Learning Engineer, with a bit of Web3 &amp; Full-Stack Development.</p>
+                <span class="tag">// also into</span>
+                <div class="tags mt">
+                    <span class="tag tag--border">Cybersecurity</span>
+                    <span class="tag tag--border">Data Analytics</span>
+                    <span class="tag tag--border">Game Development</span>
+                    <span class="tag tag--border">Cloud</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card card--deep stack">
+            <div class="stack-row">
+                <span class="tag stack-label">languages</span>
+                <div class="tags">
+                    <span class="tag tag--border">Python</span><span class="tag tag--border">C</span><span class="tag tag--border">Solidity</span><span class="tag tag--border">Rust</span><span class="tag tag--border">HTML &amp; CSS</span><span class="tag tag--border">JavaScript</span><span class="tag tag--border">TypeScript</span>
+                </div>
+            </div>
+            <div class="stack-row">
+                <span class="tag stack-label">frameworks &amp; libs</span>
+                <div class="tags">
+                    <span class="tag tag--border">PyTorch</span><span class="tag tag--border">TensorFlow</span><span class="tag tag--border">Tailwind CSS</span><span class="tag tag--border">Flask</span><span class="tag tag--border">React</span>
+                </div>
+            </div>
+            <div class="stack-row">
+                <span class="tag stack-label">cloud</span>
+                <div class="tags">
+                    <span class="tag tag--border">AWS Redshift</span><span class="tag tag--border">AWS S3</span><span class="tag tag--border">AWS Lambda</span><span class="tag tag--border">AWS EC2</span>
+                </div>
+            </div>
+            <div class="stack-row">
+                <span class="tag stack-label">tools</span>
+                <div class="tags">
+                    <span class="tag tag--border">Git</span><span class="tag tag--border">GitHub</span><span class="tag tag--border">Docker</span><span class="tag tag--border">Jupyter Notebook</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Experience  -->
+    <section id="experience" class="section">
+        <h2 class="heading"><span class="hv">WHERE</span> <span class="bt">I'VE BEEN</span></h2>
+
+        <div class="card card--deep timeline">
+            <div class="row">
+                <span class="tag date">OCT 2026 — NOW</span>
+                <div>
+                    <h3 class="subheading">BACKEND DEVELOPER</h3>
+                    <p class="org">Project Development Team · AWS Student Builders Group PUP</p>
+                    <p>Building the backend for the org's projects as part of the Project Development Team.</p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="tag date">SEPT 2026 — NOW</span>
+                <div>
+                    <h3 class="subheading">SKILLCRAFTER TRACK LEAD</h3>
+                    <p class="org">Cortex (AI Department) · Microsoft Campus Club PUP</p>
+                    <p>Leading the SkillCrafter track and a team of three in MCC's AI department.</p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="tag date">NOV 2025 — NOW</span>
+                <div>
+                    <h3 class="subheading">DATA &amp; ML CADET</h3>
+                    <p class="org">Google Developer Groups PUP</p>
+                    <p>Studying how to interpret raw datasets, design predictive algorithms and build self-learning systems, blending applied math, statistics and programming.</p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="tag date">OCT 2025 — AUG 2026</span>
+                <div>
+                    <h3 class="subheading">AI DEPT. SENIOR ASSOCIATE &amp; DATACAMP MANAGER</h3>
+                    <p class="org">AWS Student Builders Group PUP</p>
+                    <p>Managing DataCamp scholarship distribution, engineering AI department student programs, and curating technical learning curricula.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Projects  -->
+    <section id="projects" class="section">
+        <img class="doodle doodle--projects" src="~/img/chibi-3.webp" alt="chieri" />
+
+        <h2 class="heading"><span class="hv">THINGS</span><br /><span class="bt">I MADE</span></h2>
+
+        <div class="project-grid">
+            <article class="card card--bone project">
+                <span class="tag">01 · web3 / fastapi · solo</span>
+                <h3 class="subheading">COMISURE</h3>
+                <p>A decentralized escrow smart-contract framework on the Stellar Network using Soroban, FastAPI and React: a smarter, costless middleman for artists and freelancers.</p>
+                <div class="tags"><span class="tag tag--border">🥈 Stellar PH Bootcamp</span><span class="tag tag--border">Soroban</span><span class="tag tag--border">React</span></div>
+                <a href="https://github.com/HitsukiMok/ComiSure" target="_blank" class="card-link">inspect source code →</a>
+            </article>
+
+            <article class="card card--ice project">
+                <span class="tag">02 · maplibre / data viz · data integration &amp; devops</span>
+                <h3 class="subheading">GUIDHER</h3>
+                <p>A community-sourced safer-routing platform for women commuting around PUP Sta. Mesa. Turns real-time street reports into a safety map with AI pre-trip risk assessments.</p>
+                <div class="tags"><span class="tag tag--border">🏆 SparkFEST 2026</span><span class="tag tag--border">Node.js</span><span class="tag tag--border">Gemini API</span></div>
+                <a href="https://github.com/1-N-2-Dis/GuidHer" target="_blank" class="card-link">inspect source code →</a>
+            </article>
+
+            <article class="card card--peri project">
+                <span class="tag">03 · react + vite · full-stack dev &amp; pm</span>
+                <h3 class="subheading">LANDAS</h3>
+                <p>A learner-centered, neuro-inclusive digital learning sanctuary that turns schoolwork into epic life quests.</p>
+                <div class="tags"><span class="tag tag--border">🏆 AFK Ideathon 2026</span><span class="tag tag--border">React</span><span class="tag tag--border">Vite</span></div>
+                <a href="https://github.com/HitsukiMok/Landas" target="_blank" class="card-link">inspect source code →</a>
+            </article>
+
+            <article class="card card--bone project">
+                <span class="tag">04 · huggingface + deberta v3 · ai engineer</span>
+                <h3 class="subheading">PURIFAI</h3>
+                <p>Real-time prompt-injection defense at the edge: a zero-trust Chrome extension and local AI backend that stops threats before they reach your LLMs.</p>
+                <div class="tags"><span class="tag tag--border">DeBERTa v3</span><span class="tag tag--border">Chrome Extension</span></div>
+                <a href="https://github.com/HitsukiMok/PurifAI" target="_blank" class="card-link">inspect source code →</a>
+            </article>
+
+            <article class="card card--ice project">
+                <span class="tag">05 · ai agents / security · project manager</span>
+                <h3 class="subheading">PENTEST AGENT</h3>
+                <p>An autonomous agent that runs penetration tests on its own. I led a four-person team as project manager for the Global AI Hackathon.</p>
+                <div class="tags"><span class="tag tag--border">🔟 Top 10 · Global AI Hackathon</span><span class="tag tag--border">AI Agents</span><span class="tag tag--border">Security</span></div>
+                <a href="https://pentester.hizu.dev" target="_blank" class="card-link">view project →</a>
+            </article>
+
+            <article class="card card--bone project">
+                <span class="tag">06 · mern stack · project manager</span>
+                <h3 class="subheading">KYUR</h3>
+                <p>A MERN app for the PUP community with QR-assisted item tracking, AWS S3 image storage and real-time Socket.io messaging to modernize lost-and-found.</p>
+                <div class="tags"><span class="tag tag--border">MERN</span><span class="tag tag--border">AWS S3</span><span class="tag tag--border">Socket.io</span></div>
+                <a href="https://github.com/HitsukiMok/KyuR" target="_blank" class="card-link">inspect source code →</a>
+            </article>
+        </div>
+    </section>
+
+    <!--  Awards  -->
+    <section id="awards" class="section">
+        <h2 class="heading"><span class="hv">GLORY</span> <span class="bt">INDEX</span></h2>
+
+        <div class="award-grid">
+            <div class="card card--deep award">
+                <span class="tag">2026</span>
+                <span class="award-place">CHAMPION</span>
+                <h3 class="subheading">SPARKFEST 2026</h3>
+                <p>Awarded one of the best projects, supported by multiple Gender and Development organizations.</p>
+            </div>
+            <div class="card card--deep award">
+                <span class="tag">2026</span>
+                <span class="award-place">CHAMPION · MOST CREATIVE</span>
+                <h3 class="subheading">AFK IDEATHON 2026</h3>
+                <p>Champion, and recognized as one of the most unique solutions among the competing teams.</p>
+            </div>
+            <div class="card card--deep award">
+                <span class="tag">2026</span>
+                <span class="award-place">TOP 10 CONTENDER</span>
+                <h3 class="subheading">GLOBAL AI HACKATHON</h3>
+                <p>Led the team behind an autonomous penetration-testing agent as project manager.</p>
+            </div>
+            <div class="card card--deep award">
+                <span class="tag">2026</span>
+                <span class="award-place">2ND PLACE</span>
+                <h3 class="subheading">STELLAR PH BOOTCAMP</h3>
+                <p>Recognized for a unique Stellar use case: escrow smart contracts for freelancers.</p>
+            </div>
+            <div class="card card--deep award">
+                <span class="tag">2026</span>
+                <span class="award-place">BEST CONCEPT · BEST ACCURACY</span>
+                <h3 class="subheading">FEU ACM ACX VERTEX</h3>
+                <p>Best Concept &amp; Creativity and Best Accuracy &amp; Functionality on dynamic algorithmic problem suites.</p>
+            </div>
+            <div class="card card--deep award">
+                <span class="tag">2025</span>
+                <span class="award-place">3RD PLACE</span>
+                <h3 class="subheading">AWS E:NOVATORS IDEATHON</h3>
+                <p>Co-architected cloud-native conceptual solutions addressing public systemic scaling limits.</p>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <h3 class="subheading certs-title"><span class="hv">CERTIFICATIONS</span></h3>
+        <div class="cert-grid">
+            <button type="button" class="card card--bone cert">
+                <span class="cert-frame"><img src="~/img/certs/MicrosoftFoundry.webp" alt="Microsoft Applied Skills certificate" loading="lazy" /></span>
+                <span class="tag">Microsoft</span>
+                <strong>Applied Skills: Get Started Developing Agents in Microsoft Foundry</strong>
+            </button>
+            <button type="button" class="card card--bone cert">
+                <span class="cert-frame"><img src="~/img/certs/AWSAIPractitionerChallenge.webp" alt="AWS AI Practitioner Challenge certificate" loading="lazy" /></span>
+                <span class="tag">Udacity × AWS</span>
+                <strong>AWS AI Practitioner Challenge</strong>
+            </button>
+            <button type="button" class="card card--bone cert">
+                <span class="cert-frame"><img src="~/img/certs/DataCamp-AI-Fundamentals.webp" alt="DataCamp AI Fundamentals certificate" loading="lazy" /></span>
+                <span class="tag">DataCamp</span>
+                <strong>AI Fundamentals</strong>
+            </button>
+            <button type="button" class="card card--bone cert">
+                <span class="cert-frame"><img src="~/img/certs/DataCamp-Data-Literacy.webp" alt="DataCamp Data Literacy certificate" loading="lazy" /></span>
+                <span class="tag">DataCamp</span>
+                <strong>Data Literacy</strong>
+            </button>
+        </div>
+        <a href="https://learn.microsoft.com/en-us/users/farhanalardi/credentials/4a2fd66b98fd973d" target="_blank" class="text-link">verify microsoft credential · ID 4A2FD66B98FD973D →</a>
+
+        <!-- Certificate viewer -->
+        <dialog id="cert-viewer" class="cert-viewer">
+            <button type="button" class="btn btn-pill cert-close" aria-label="Close">CLOSE ✕</button>
+            <img id="cert-viewer-img" src="" alt="" />
+        </dialog>
+    </section>
+
+    <!--  Community / Impact  -->
+    <section id="impact" class="section">
+        <h2 class="heading"><span class="hv">OUT IN THE</span><br /><span class="bt">COMMUNITY</span></h2>
+
+        <div class="card card--deep timeline">
+            <div class="row">
+                <span class="tag date">JUL — AUG 2026</span>
+                <div>
+                    <h3 class="subheading">QUICKQUEST BUILD NIGHTS</h3>
+                    <p class="org">Event Tech &amp; Creatives · 10-week workshop</p>
+                    <p>Co-headed the program flow, built custom HTML email blasts, and handled speaker coordination and event tech.</p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="tag date">JUN 21, 2026</span>
+                <div>
+                    <h3 class="subheading">PHILIPPINE BLOCKCHAIN WEEK</h3>
+                    <p class="org">Speakers &amp; Programs</p>
+                    <p>Assisted with speaker coordination and program flow, and helped on the technical side with speaker presentations.</p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="tag date">MAR 23, 2026</span>
+                <div>
+                    <h3 class="subheading">PYTHON ASIA 2026</h3>
+                    <p class="org">Education Summit · Event Technical</p>
+                    <p>Ran timers, speaker transitions and remote guest integrations, and helped create certificates and debrief materials.</p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="tag date">FEB 25, 2026</span>
+                <div>
+                    <h3 class="subheading">AI MAXXIN'</h3>
+                    <p class="org">Co-organizer · AWS SBG PUP</p>
+                    <p>Created the event certificate, designed the presentation deck, and helped shape the event.</p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="tag date">JAN 30, 2026</span>
+                <div>
+                    <h3 class="subheading">SONAI 2026</h3>
+                    <p class="org">Attendee · State of the Nation in AI</p>
+                    <p>Learned where the Philippines stands in AI adoption and how to ease people's fear of AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Contact  -->
+    <section id="contact" class="section contact">
+        <img class="doodle doodle--contact" src="~/img/chibi-4.webp" alt="oomf hotaru" />
+
+        <h2 class="display display--md">
+            <span class="hv">SAY</span><br />
+            <span class="bt">HI.</span>
+        </h2>
+
+        <div class="actions">
+            <a href="mailto:lardizabalfarhana@@gmail.com" class="btn btn-pill">EMAIL ME</a>
+            <a href="https://github.com/HitsukiMok" target="_blank" class="btn btn-outline">GITHUB</a>
+            <a href="https://linkedin.com/in/farhanalardi" target="_blank" class="btn btn-outline">LINKEDIN</a>
+            <a href="https://www.kaggle.com/flardizabal" target="_blank" class="btn btn-outline">KAGGLE</a>
+            <a href="https://www.facebook.com/krap1y/" target="_blank" class="btn btn-outline">FACEBOOK</a>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <span>© @DateTime.Now.Year FARHANA LARDIZABAL</span>
+        <span>built with asp.net core · smth for AppDev</span>
+    </footer>
+
+    <script>
+            // Certificate viewer
+            const viewer = document.getElementById("cert-viewer");
+            const viewerImg = document.getElementById("cert-viewer-img");
+            document.querySelectorAll(".cert").forEach(card => {
+                card.addEventListener("click", () => {
+                    const img = card.querySelector("img");
+                    viewerImg.src = img.src;
+                    viewerImg.alt = img.alt;
+                    viewer.showModal();
+                });
+            });
+            viewer.querySelector(".cert-close").addEventListener("click", () => viewer.close());
+            viewer.addEventListener("click", e => { if (e.target === viewer) viewer.close(); });
+    </script>
+</body>
+</html>
